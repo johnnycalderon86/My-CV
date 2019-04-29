@@ -1,162 +1,198 @@
-  body {
-      margin: 10% 20%;
-  }
-
-  .wrapper {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-gap: 10px;
-      grid-auto-rows: minmax(100px, auto);
-      -webkit-box-shadow: 10px 10px 6px 6px rgba(0,0,0,0.77); 
-      box-shadow: 10px 10px 6px 6px rgba(0,0,0,0.77);
-      border-radius: 20px;
-      padding: 10px 10px;
-      border: 1pz solid gray; 
-
-  }
-
-  .one {
-      grid-column: 1 / 2;
-      grid-row: 1;
-      background-color: rgba(229, 220, 255, 0.959);
-      text-align: center;
-      font-size: 1em;
-      font-family: 'Fredericka the Great', cursive;
-      border-radius: 20px;
-      border: 2px solid black;
-  }
-
-  .two {
-      grid-column: 2 / 4;
-      grid-row: 1 / 3;
-      background-color: rgba(220, 235, 255, 0.959);
-      border-radius: 20px;
-      border: 2px solid black;
-
-  }
-
-  .three {
-      grid-column: 1;
-      grid-row: 2 / 4;
-
-      border-radius: 20px;
-      background-image: url(https://designshack.net/wp-content/uploads/gradient-background.jpg);
-      
-  }
-
-  .four {
-      grid-column: 2;
-      grid-row: 3;
-      background-color: rgb(221, 154, 90);
-      border-radius: 20px;
-      border: 2px solid black;
-  }
-
-  .five {
-      grid-column: 2;
-      grid-row: 4;
-      background-color: plum;
-      border-radius: 20px;
-      border: 2px solid black;
-  }
-
-  .six {
-      grid-column: 3;
-      grid-row: 4;
-      background-color: lightcoral;
-      border-radius: 20px;
-      border: 2px solid black;
-  }
-
-  .seven {
-      grid-column: 3;
-      grid-row: 3;
-      background-color: rgb(213, 226, 164);
-      border-radius: 20px;
-      border: 2px solid black;
-  }
-
-  .three img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 50%;
-      height:auto;
-      margin-top: 90px;
-      
-      opacity: 0.8;
-      padding:px;
-      
-
-
-  }
-
-  .one h2 {
-      background-color: rgb(170, 165, 177);
-      max-width: 100%;
-      text-align: center;
-      border-radius: 20px;
-      margin: 10px 10px;
-      font-size: 1.5em;
-
-  }
-
+/* @media only screen and (max-width: 400px) {
+    .wrapper {
+      font-size: 0.5em;
+    }
+  }  
   
+   */
 
-  .two p {
-      text-align: center;
-      font-family: 'Fredericka the great';
-      font-size: 40px;
-      background-color: rgb(170, 165, 177);
-      margin:10px 10px;
-      border-radius: 20px;
+body {
+    margin: 10% 20%;
+}
 
-  }
+.wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    -webkit-box-shadow: 10px 10px 6px 6px rgba(0, 0, 0, 0.77);
+    box-shadow: 10px 10px 6px 6px rgba(0, 0, 0, 0.77);
+    border-radius: 20px;
+    padding: 10px 10px;
+    border: 1px solid gray;
+    margin: auto;
+}
 
-  
+.one {
+    grid-column: 1 / 2;
+    grid-row: 1;
+    background-color: rgba(229, 220, 255, 0.959);
+    text-align: center;
+    font-size: 1em;
+    font-family: 'Fredericka the Great', cursive;
+    border-radius: 20px;
+    border: 2px solid black;
+}
 
-  .two h3 {
-      margin-left: 10px;
-      font-size: 1.3em;
-      font-family:'Londrina Shadow', cursive;;
-      color: black;
-  }
+.two {
+    grid-column: 2 / 4;
+    grid-row: 1 / 3;
+    background-color: rgba(220, 235, 255, 0.959);
+    border-radius: 20px;
+    border: 2px solid black;
 
-  
+}
 
-  .one p{
-      text-align: left;
-      font-size: 15px;
+.three {
+    grid-column: 1;
+    grid-row: 2 / 4;
 
-  }
+    border-radius: 20px;
+    background-image: url(https://designshack.net/wp-content/uploads/gradient-background.jpg);
 
-  .four h3{
-      font-family: 'Londrina shadow';
-      margin-left: 10px;
-      
-      
-      
-  }
+}
 
-  .four p{
-      font-family: Georgia, 'Times New Roman', Times, serif;
-      margin-left: 10px;
-      font-family: 'Righteous', cursive;
+.four {
+    grid-column: 2;
+    grid-row: 3;
+    background-color: rgb(221, 154, 90);
+    border-radius: 20px;
+    border: 2px solid black;
+}
 
-  }
+.five {
+    grid-column: 2;
+    grid-row: 4;
+    background-color: plum;
+    border-radius: 20px;
+    border: 2px solid black;
+}
 
-  .six a img{
-      text-align: center;
-      margin-left:40px;
-      margin-top:10px;
-     
-      
-      
-  }
+.six {
+    grid-column: 3;
+    grid-row: 4;
+    background-color: lightcoral;
+    border-radius: 20px;
+    border: 2px solid black;
+}
 
-  .seven h3{
+.seven {
+    grid-column: 3;
+    grid-row: 3;
+    background-color: rgb(213, 226, 164);
+    border-radius: 20px;
+    border: 2px solid black;
+}
+
+.three img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    height: auto;
+    margin-top: 90px;
+
+    opacity: 0.8;
+    padding: px;
+
+
+
+}
+
+.one h2 {
+    background-color: rgb(170, 165, 177);
+    max-width: 100%;
+    text-align: center;
+    border-radius: 20px;
+    margin: 10px 10px;
+    font-size: 1.5em;
+
+}
+
+
+
+.two p {
+    text-align: center;
+    font-family: 'Fredericka the great';
+    font-size: 40px;
+    background-color: rgb(170, 165, 177);
+    margin: 10px 10px;
+    border-radius: 20px;
+
+}
+
+
+
+.two h3 {
+    margin-left: 10px;
+    font-size: 1.3em;
+    font-family: 'Londrina Shadow', cursive;
+    ;
+    color: black;
+}
+
+
+
+.one p {
+    text-align: left;
+    font-size: 15px;
+
+}
+
+.four h3 {
     font-family: 'Londrina shadow';
     margin-left: 10px;
-    
-    
-    
-  }
+
+
+
+}
+
+.four p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 10px;
+    font-family: 'Righteous', cursive;
+
+}
+
+.six a img {
+    text-align: center;
+    margin-left: 40px;
+    margin-top: 10px;
+
+
+
+}
+
+.seven h3 {
+    font-family: 'Londrina shadow';
+    margin-left: 10px;
+
+
+
+}
+
+@media only screen and (max-width: 1000px) {
+    .wrapper {
+        
+        height: 1000px;
+        width: 550px;
+        margin: 0 0;
+        
+
+
+    }
+
+
+}
+
+@media only screen and (max-width: 1000px) {
+    body {
+        
+        margin: 0% 0%;
+        
+
+
+    }
+
+
+}
